@@ -3,7 +3,7 @@ spring:
     name: opssleuth
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/sherlockops
+    url: jdbc:postgresql://localhost:5432/opssleuth
     username: opssleuth
     password: opssleuth
 

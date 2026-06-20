@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:16
+
+    environment:
+      POSTGRES_DB: sherlockops
+      POSTGRES_USER: sherlock
+      POSTGRES_PASSWORD: sherlock
+
+    ports:
+      - "5432:5432"

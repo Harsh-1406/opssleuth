@@ -1,3 +1,15 @@
 spring:
   application:
     name: sherlockops
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sherlockops
+    username: sherlock
+    password: sherlock
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true

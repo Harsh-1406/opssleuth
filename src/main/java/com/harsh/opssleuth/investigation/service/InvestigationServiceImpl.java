@@ -17,7 +17,6 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-@Transactional
 public class InvestigationServiceImpl implements InvestigationService {
 
     private final InvestigationRepository investigationRepository;
@@ -45,7 +44,6 @@ public class InvestigationServiceImpl implements InvestigationService {
     }
 
     @Override
-    @Transactional(readOnly = true)
     public InvestigationResponse getInvestigation(UUID id) {
 
         Investigation investigation =
@@ -56,7 +54,6 @@ public class InvestigationServiceImpl implements InvestigationService {
     }
 
     @Override
-    @Transactional(readOnly = true)
     public List<InvestigationResponse> getInvestigations() {
 
         return investigationRepository.findAll()
